@@ -5,24 +5,22 @@ $from = "<Sender@xxxxxx.com>";
 $to = "<Yourmail@xxxxxx.com>";
 $subject =  $_REQUEST['subject'];
 
-$= $_REQUEST['email'];
+$email= $_REQUEST['email'];
 $name = $_REQUEST['name'];
-
 
 $message = $_REQUEST['message'];
   
- $headers = array ('From' => $email,
+$headers = array ('From' => $email,
   'To' => $to,
   'Subject' => $subject);
  
 
-$body .= "Name:   \t{$name}\n";
-$body .= "Email:  \t{$email}\n";
-$body .= "Subject:\t{$subject}\n";
+$body  = "Sender name:   \t{$name}\n";
+$body .= "Sender e-mail:  \t{$email}\n";
 $body .= "Message:\t{$message}";
  
 
-$host = "your_smtp_host";
+$host = "your_smtp_hostname";
 $username = "smtp_username";
 $password = "smtp_password";
 
